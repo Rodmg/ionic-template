@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-title>Hubo un problema...</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid text-center>
+    <ion-row padding>
+      <ion-col>
+        <ion-icon name="alert"></ion-icon>
+      </ion-col>
+    </ion-row>
+    <ion-row padding>
+      <ion-col>
+        <h2>No hay comunicación con el servidor</h2>
+      </ion-col>
+    </ion-row>
+    <ion-row padding>
+      <ion-col>
+        <p>Por favor, revise su conexión a internet</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer padding no-border>
+  <ion-button (click)="dismiss()" expand="block">
+    Volver a Intentar
+  </ion-button>
+</ion-footer>
